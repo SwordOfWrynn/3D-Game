@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 20945350862090170}
   - component: {fileID: 124753993868531946}
   - component: {fileID: 81846505349860210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 114231757963296132}
   - component: {fileID: 114150539665645770}
   - component: {fileID: 114052050013756214}
-  m_Layer: 0
+  - component: {fileID: 114849733200003052}
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +63,7 @@ GameObject:
   - component: {fileID: 4444587431567440}
   - component: {fileID: 33365610103189424}
   - component: {fileID: 23159478496075704}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +81,7 @@ GameObject:
   - component: {fileID: 33119133738028960}
   - component: {fileID: 23765747628042766}
   - component: {fileID: 65245740074424748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +96,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4187985998175094}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +111,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4235378096158006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,6 +411,7 @@ MonoBehaviour:
   - {fileID: 114488383536935266}
   - {fileID: 20945350862090170}
   - {fileID: 81846505349860210}
+  remoteLayerName: 
 --- !u!114 &114407889427453962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -467,6 +469,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 20945350862090170}
+  cameraRotationLimit: 85
+--- !u!114 &114849733200003052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1096841944522592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472feb79dc54d7448b42dad490a33c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Cool Weapon Name
+    damage: 10
+    range: 100
+  cam: {fileID: 20945350862090170}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!124 &124753993868531946
 Behaviour:
   m_ObjectHideFlags: 1
