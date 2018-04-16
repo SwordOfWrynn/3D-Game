@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3305912}
   - component: {fileID: 2338820}
   - component: {fileID: 6424188}
+  - component: {fileID: 136568650488134920}
   m_Layer: 0
   m_Name: Tree_01_autumn_vc
   m_TagString: Untagged
@@ -98,3 +99,16 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166714}
   m_IsPrefabParent: 1
+--- !u!136 &136568650488134920
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.78980476
+  m_Height: 3.0085974
+  m_Direction: 1
+  m_Center: {x: 0.011228234, y: 1.4263501, z: -0.00053071976}
