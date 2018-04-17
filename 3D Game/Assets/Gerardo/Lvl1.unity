@@ -24435,15 +24435,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 3ebf24917cd2ab447819802bdd126a93, type: 2}
       propertyPath: movementSettings.ForwardSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 3ebf24917cd2ab447819802bdd126a93, type: 2}
       propertyPath: movementSettings.BackwardSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 3ebf24917cd2ab447819802bdd126a93, type: 2}
       propertyPath: movementSettings.StrafeSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 3ebf24917cd2ab447819802bdd126a93, type: 2}
       propertyPath: m_Enabled
