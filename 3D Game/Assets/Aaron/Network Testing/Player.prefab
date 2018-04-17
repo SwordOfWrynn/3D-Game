@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 114488383536935266}
   - component: {fileID: 114407889427453962}
   - component: {fileID: 114231757963296132}
+  - component: {fileID: 114849733200003052}
   - component: {fileID: 114150539665645770}
   - component: {fileID: 114052050013756214}
-  - component: {fileID: 114849733200003052}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -411,7 +411,8 @@ MonoBehaviour:
   - {fileID: 114488383536935266}
   - {fileID: 20945350862090170}
   - {fileID: 81846505349860210}
-  remoteLayerName: 
+  - {fileID: 114849733200003052}
+  remoteLayerNumber: 10
 --- !u!114 &114407889427453962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -488,7 +489,7 @@ MonoBehaviour:
   cam: {fileID: 20945350862090170}
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1024
 --- !u!124 &124753993868531946
 Behaviour:
   m_ObjectHideFlags: 1
