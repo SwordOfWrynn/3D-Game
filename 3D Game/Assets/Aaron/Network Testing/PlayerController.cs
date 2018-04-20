@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour {
     void Update()
     {
         //Calculate movement velocity as a 3D vector
-        float xmove = Input.GetAxisRaw("Horizontal");
-        float zmove = Input.GetAxisRaw("Vertical");
+        float xmove = Input.GetAxis("Horizontal");
+        float zmove = Input.GetAxis("Vertical");
 
         Vector3 moveHorizontal = transform.right * xmove;
         Vector3 moveVertical = transform.forward * zmove;
 
         //Final movement vector
-        Vector3 velocity = (moveHorizontal + moveVertical).normalized * speed;
+        Vector3 velocity = (moveHorizontal + moveVertical) * speed;
 
         //Apply movement
         motor.Move(velocity);

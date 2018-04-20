@@ -8,6 +8,8 @@ public class PlayerSetup : NetworkBehaviour {
     Behaviour[] componentsToDisable;
     [SerializeField]
     private int remoteLayerNumber = 10;
+    [SerializeField]
+    private int dontDrawLayerNumber = 12;
 
     private Camera sceneCamera;
 
