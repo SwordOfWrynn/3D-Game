@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1832314962439264
 GameObject:
   m_ObjectHideFlags: 1
@@ -663,6 +663,9 @@ MonoBehaviour:
   - {fileID: 114849733200003052}
   remoteLayerNumber: 10
   dontDrawLayerNumber: 12
+  playerGraphics: {fileID: 1493934957851864}
+  playerUIPrefab: {fileID: 1651317360469598, guid: a32d558f975e4f947961385c68eb183e,
+    type: 2}
 --- !u!114 &114407889427453962
 MonoBehaviour:
   m_ObjectHideFlags: 1
