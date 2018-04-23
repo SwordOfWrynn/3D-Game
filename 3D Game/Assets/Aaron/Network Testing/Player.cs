@@ -22,16 +22,28 @@ public class Player : NetworkBehaviour {
     [SyncVar]
     private int currentHealth;
 
-	// Use this for initialization
-	public void Setup () {
+    // Use this for initialization
+    public void PlayerSetup() {
+        CmdBroadcastNewPlayerSetup();
+    }
+
+    [Command]
+    private void CmdBroadcastNewPlayerSetup()
+    {
+        RpcSetupPlayerOnAllClients();
+    }
+
+    [ClientRpc]
+    private void RpcSetupPlayerOnAllClients ()
+    {
         wasEnabled = new bool[disableOnDeath.Length];
         for (int i = 0; i < wasEnabled.Length; i++)
         {
             wasEnabled[i] = disableOnDeath[i].enabled;
         }
 
-        SetDefaults();       
-	}
+        SetDefaults();
+    }
 
     private void Update()
     {

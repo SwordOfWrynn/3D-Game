@@ -34,8 +34,9 @@ public class PlayerSetup : NetworkBehaviour {
             //create player UI
             playerUIInstance = Instantiate(playerUIPrefab);
             playerUIInstance.name = playerUIPrefab.name;
+            GetComponent<Player>().PlayerSetup();
         }
-        GetComponent<Player>().Setup();
+        
     }
 
     void SetLayerRecursively (GameObject obj, int newLayer)
