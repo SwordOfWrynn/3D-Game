@@ -72,9 +72,13 @@ public class PlayerSetup : NetworkBehaviour {
 
     void OnDisable()
     {
-        if (sceneCamera != null)
-            sceneCamera.gameObject.SetActive(true);
+        if (isLocalPlayer)
+        {
+            if (sceneCamera != null)
+                sceneCamera.gameObject.SetActive(true);
+        }
         GameManager.UnRegisterPlayer(transform.name);
+        
     }
     
 }

@@ -24,6 +24,7 @@ public class Player : NetworkBehaviour {
 
     // Use this for initialization
     public void PlayerSetup() {
+
         CmdBroadcastNewPlayerSetup();
     }
 
@@ -93,6 +94,8 @@ public class Player : NetworkBehaviour {
         Transform spawnPoint= NetworkManager.singleton.GetStartPosition();
         transform.position = spawnPoint.position;
         transform.rotation = spawnPoint.rotation;
+
+
         Debug.Log(transform.name + " respawned");
     }
 

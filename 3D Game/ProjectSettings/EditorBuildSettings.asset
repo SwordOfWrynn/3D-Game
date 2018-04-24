@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Aaron/Network Testing/Lobby.unity
+    guid: a2c97f77a54c4544990dbe2a3f32de02
   - enabled: 1
     path: Assets/Aaron/Network Testing/Network Testing.unity
     guid: aaeae3fd3544a5d49b2a960c0917d4fb
