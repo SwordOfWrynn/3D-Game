@@ -28,6 +28,7 @@ public class JoinGame : MonoBehaviour {
 
     public void RefreshRoomList()
     {
+        roomList.Clear();
         networkManager.matchMaker.ListMatches(0, 10, "", true, 0, 0, OnMatchList);
         statusText.text = "Loading...";
     }
