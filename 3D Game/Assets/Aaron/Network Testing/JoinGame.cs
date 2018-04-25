@@ -10,6 +10,10 @@ public class JoinGame : MonoBehaviour {
     private NetworkManager networkManager;
     [SerializeField]
     private Text statusText;
+    [SerializeField]
+    private GameObject roomListItemPrefab;
+    [SerializeField]
+    private Transform roomListParent;
 
     private void Start()
     {
@@ -28,20 +32,35 @@ public class JoinGame : MonoBehaviour {
         statusText.text = "Loading...";
     }
 
-    public void OnMatchList(bool success, string extendedInfo, List<MatchInfoSnapshot> matches)
+    public void OnMatchList(bool success, string extendedInfo, List<MatchInfoSnapshot> matchList)
     {
         statusText.text = "";
-        if (matches == null)
+        if (matchList == null)
         {
             statusText.text = "Failed to get rooms.";
             return;
         }
         ClearRoomList();
+        foreach(MatchInfoSnapshot match in matchList)
+        {
+            GameObject roomListItemGO = Instantiate(roomListItemPrefab);
+            roomListItemGO.transform.SetParent(roomListParent);
+
+            roomList.Add(roomListItemGO);
+        }
+        if (roomList.Count == 0)
+        {
+            statusText.text = "No active rooms";
+        }
     }
 
     void ClearRoomList()
     {
-
+        for (int i = 0; i < roomList.Count; i++)
+        {
+            Destroy(roomList[i]);
+        }
+        roomList.Clear();
     }
 
 }
