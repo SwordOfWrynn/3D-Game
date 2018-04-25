@@ -39,4 +39,9 @@ public class JoinGame : MonoBehaviour {
         ClearRoomList();
     }
 
+    void ClearRoomList()
+    {
+
+    }
+
 }
