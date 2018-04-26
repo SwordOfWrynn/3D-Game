@@ -47,6 +47,10 @@ public class JoinGame : MonoBehaviour {
             GameObject roomListItemGO = Instantiate(roomListItemPrefab);
             roomListItemGO.transform.SetParent(roomListParent);
 
+            RoomListItem roomListItem = roomListItemGO.GetComponent<RoomListItem>();
+            if (roomListItem != null)
+                roomListItem.SetUp(match);
+
             roomList.Add(roomListItemGO);
         }
         if (roomList.Count == 0)
