@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class HostGame : MonoBehaviour {
     
@@ -7,6 +8,10 @@ public class HostGame : MonoBehaviour {
     private string roomName;
     private NetworkManager networkManager;
     private string privateClietAddress = "1";
+
+    public InputField inputField;
+    public Text inputFieldText;
+    public Button defaultButton;
 
     public void SetRoomName (string name)
     {
@@ -29,9 +34,17 @@ public class HostGame : MonoBehaviour {
         }
     }
 
+	public void DefaultNames()
+    {
+        Debug.Log("Foo");
+        defaultButton.Select();
+    }
+
+    public void SetName()
+    {
+        Debug.Log("Foo");
+        inputFieldText.text = "defaultRoomName";
+        inputField.text = "defaultName";
+    }
 	
-	
-	void Update () {
-		
-	}
 }
