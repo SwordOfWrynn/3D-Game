@@ -10,7 +10,6 @@ public class HostGame : MonoBehaviour {
     private string privateClietAddress = "1";
 
     public InputField inputField;
-    public Text inputFieldText;
     public Button defaultButton;
 
     public void SetRoomName (string name)
@@ -24,7 +23,9 @@ public class HostGame : MonoBehaviour {
         {
             networkManager.StartMatchMaker();
         }
-	}
+        inputField = GameObject.Find("RoomNameInputField").GetComponent<InputField>();
+        defaultButton = GameObject.Find("Button").GetComponent<Button>();
+    }
     public void CreateRoom()
     {
         if (roomName != "" && roomName != null)
@@ -43,7 +44,6 @@ public class HostGame : MonoBehaviour {
     public void SetName()
     {
         Debug.Log("Foo");
-        inputFieldText.text = "defaultRoomName";
         inputField.text = "defaultName";
     }
 	
