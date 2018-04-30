@@ -23,7 +23,7 @@ public class PlayerShoot : NetworkBehaviour {
     void Update()
     {
         if (PauseMenu.isOn)
-            return;
+            return; 
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
