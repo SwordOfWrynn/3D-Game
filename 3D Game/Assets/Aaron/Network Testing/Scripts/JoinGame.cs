@@ -36,7 +36,7 @@ public class JoinGame : MonoBehaviour {
     public void OnMatchList(bool success, string extendedInfo, List<MatchInfoSnapshot> matchList)
     {
         statusText.text = "";
-        if (matchList == null)
+        if (!success || matchList == null)
         {
             statusText.text = "Failed to get rooms.";
             return;
