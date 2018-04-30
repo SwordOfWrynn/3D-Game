@@ -22,6 +22,8 @@ public class PlayerShoot : NetworkBehaviour {
     }
     void Update()
     {
+        if (PauseMenu.isOn)
+            return;
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
