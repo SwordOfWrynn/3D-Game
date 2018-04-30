@@ -18,10 +18,14 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
+        if (PauseMenu.isOn)
+        {
+            return;
+        }
         //Calculate movement velocity as a 3D vector
         float xmove = Input.GetAxis("Horizontal");
         float zmove = Input.GetAxis("Vertical");
-
+        
         Vector3 moveHorizontal = transform.right * xmove;
         Vector3 moveVertical = transform.forward * zmove;
 

@@ -1535,7 +1535,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 798736306}
-  inputFieldText: {fileID: 476494616}
   defaultButton: {fileID: 1399451000}
 --- !u!1 &1399450996
 GameObject:
