@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player : NetworkBehaviour {
 
@@ -15,7 +16,7 @@ public class Player : NetworkBehaviour {
     private Behaviour[] disableOnDeath;
     private bool[] wasEnabled;
 
-
+    private Text healthText;
     [SerializeField]
     private int maxHealth = 100;
     //when variable changes automatically sent to clients
@@ -56,6 +57,11 @@ public class Player : NetworkBehaviour {
             RpcTakeDamage(99999);
             Debug.Log("it's over 9000!!!");
         }
+        if (healthText == null)
+        {
+            healthText = GameObject.Find("healthText").GetComponent<Text>();
+        }
+        healthText.text = "Health: " + currentHealth;
     }
 
     [ClientRpc]
