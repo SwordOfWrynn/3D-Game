@@ -33,6 +33,8 @@ public class HostGame : MonoBehaviour {
             Debug.Log("Creating Room: " + roomName);
             networkManager.matchMaker.CreateMatch(roomName, roomSize, true, "", "", "", 0, 0, networkManager.OnMatchCreate);
         }
+        else
+            Debug.LogError("The name " + roomName + " is not valid");
     }
 
 	public void DefaultNames()
