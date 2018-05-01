@@ -20,8 +20,17 @@ public class PlayerController : MonoBehaviour {
     {
         if (PauseMenu.isOn)
         {
+            if (Cursor.lockState != CursorLockMode.None)
+                Cursor.lockState = CursorLockMode.None;
             return;
         }
+
+        if (Cursor.lockState != CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Debug.Log("Cursor Locked");
+        }
+
         //Calculate movement velocity as a 3D vector
         float xmove = Input.GetAxis("Horizontal");
         float zmove = Input.GetAxis("Vertical");
