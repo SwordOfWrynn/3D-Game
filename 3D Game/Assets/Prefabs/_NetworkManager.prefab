@@ -151,5 +151,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 0}
-  inputFieldText: {fileID: 0}
   defaultButton: {fileID: 0}
