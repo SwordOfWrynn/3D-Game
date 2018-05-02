@@ -1901,6 +1901,16 @@ Prefab:
       propertyPath: showGUI
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
+        type: 2}
+      propertyPath: m_OfflineScene
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
+        type: 2}
+      propertyPath: m_OnlineScene
+      value: AttemptLvl1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114797795992258120, guid: d76f3088cf399d04680ce407ef3fe032, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d76f3088cf399d04680ce407ef3fe032, type: 2}

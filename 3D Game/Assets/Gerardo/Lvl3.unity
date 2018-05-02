@@ -1204,7 +1204,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-29228
+  m_Name: pb_Mesh6270
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -2877,7 +2877,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 61ae5bbdc3d840642b7cb192369eaa4d, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 61ae5bbdc3d840642b7cb192369eaa4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4261,6 +4261,7 @@ GameObject:
   - component: {fileID: 885480336}
   - component: {fileID: 885480335}
   - component: {fileID: 885480334}
+  - component: {fileID: 885480340}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -4635,6 +4636,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &885480340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885480333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb0db8a2e6ca954ea9c63ff5278b70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &890245913
 Prefab:
   m_ObjectHideFlags: 0
@@ -4862,6 +4874,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnlineScene
       value: Lvl3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
+        type: 2}
+      propertyPath: m_OfflineScene
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d76f3088cf399d04680ce407ef3fe032, type: 2}
