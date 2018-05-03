@@ -3,6 +3,7 @@ using UnityEngine.Networking;
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class Player : NetworkBehaviour {
 
     [SyncVar]
@@ -22,11 +23,17 @@ public class Player : NetworkBehaviour {
     //when variable changes automatically sent to clients
     [SyncVar]
     private int currentHealth;
+    private GameObject levelManager;
+    private Text objText;
 
     // Use this for initialization
     public void PlayerSetup() {
 
         CmdBroadcastNewPlayerSetup();
+
+        objText = GameObject.Find("ObjectiveText").GetComponent<Text>();
+        levelManager = GameObject.Find("_LevelMAnager");
+        levelManager.GetComponent<Objective>().SetObjective(objText);
     }
 
     [Command]
@@ -119,4 +126,13 @@ public class Player : NetworkBehaviour {
         if (col != null)
             col.enabled = true;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Door")
+        {
+            levelManager.GetComponent<NextLevel>().LoadNextLevel();
+        }
+    }
+
 }
