@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Player))]
 public class PlayerSetup : NetworkBehaviour {
@@ -15,6 +16,8 @@ public class PlayerSetup : NetworkBehaviour {
     [SerializeField]
     GameObject playerUIPrefab;
     private GameObject playerUIInstance;
+    private GameObject levelManager;
+    private Text objText;
 
     private Camera sceneCamera;
 
@@ -35,6 +38,9 @@ public class PlayerSetup : NetworkBehaviour {
             playerUIInstance = Instantiate(playerUIPrefab);
             playerUIInstance.name = playerUIPrefab.name;
             GetComponent<Player>().PlayerSetup();
+            objText = GameObject.Find("ObjectiveText").GetComponent<Text>();
+            levelManager = GameObject.Find("_LevelMAnager");
+            levelManager.GetComponent<Objective>().SetObjective(objText);
         }
         
     }
