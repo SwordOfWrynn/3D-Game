@@ -1904,16 +1904,12 @@ Prefab:
     - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
         type: 2}
       propertyPath: m_OfflineScene
-<<<<<<< HEAD
-      value: Lobby
-=======
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
         type: 2}
       propertyPath: m_OnlineScene
       value: AttemptLvl1
->>>>>>> bb3c9ed3326023bfd7f8c708fcc1b6b49c34b63c
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114797795992258120, guid: d76f3088cf399d04680ce407ef3fe032, type: 2}
