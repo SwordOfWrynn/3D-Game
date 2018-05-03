@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if (PauseMenu.isOn)
+        if (PauseMenu.isOn || DialogueManager.dialogueOn)
         {
             if (Cursor.lockState != CursorLockMode.None)
                 Cursor.lockState = CursorLockMode.None;

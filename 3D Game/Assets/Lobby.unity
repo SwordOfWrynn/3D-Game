@@ -691,8 +691,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 05738e5a398385f40918cd50683dfab3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1904,12 +1904,12 @@ Prefab:
     - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
         type: 2}
       propertyPath: m_OfflineScene
-      value: 
+      value: Lobby
       objectReference: {fileID: 0}
     - target: {fileID: 114333328205603122, guid: d76f3088cf399d04680ce407ef3fe032,
         type: 2}
       propertyPath: m_OnlineScene
-      value: AttemptLvl1
+      value: Network Testing
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114797795992258120, guid: d76f3088cf399d04680ce407ef3fe032, type: 2}

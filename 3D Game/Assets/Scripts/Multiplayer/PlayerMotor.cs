@@ -43,7 +43,7 @@ public class PlayerMotor : MonoBehaviour
     //Run every physics iteration
     void FixedUpdate()
     {
-        if (PauseMenu.isOn)
+        if (PauseMenu.isOn || DialogueManager.dialogueOn)
             return;
         PerformMovement();
         PerformRotation();

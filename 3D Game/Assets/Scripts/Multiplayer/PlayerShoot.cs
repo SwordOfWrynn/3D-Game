@@ -22,7 +22,7 @@ public class PlayerShoot : NetworkBehaviour {
     }
     void Update()
     {
-        if (PauseMenu.isOn)
+        if (PauseMenu.isOn || DialogueManager.dialogueOn)
             return; 
         if (Input.GetButtonDown("Fire1"))
         {
