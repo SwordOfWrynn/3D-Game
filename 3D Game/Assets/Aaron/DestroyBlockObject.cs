@@ -25,6 +25,7 @@ public class DestroyBlockObject : MonoBehaviour {
         {
             GetComponent<DialogueTrigger>().TriggerDialogue();
             Destroy(toBeDestroyed);
+            Destroy(gameObject);
         }
     }
 }
