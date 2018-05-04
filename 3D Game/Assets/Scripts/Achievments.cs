@@ -19,10 +19,14 @@ public class Achievments : MonoBehaviour {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/Achievments.dat", FileMode.Open);
             SaveLoad.AchievInfo myLoadedInfo = (SaveLoad.AchievInfo)bf.Deserialize(file);
-            achiev1.text = myLoadedInfo.achiev1;
-            achiev2.text = myLoadedInfo.achiev2;
-            achiev3.text = myLoadedInfo.achiev3;
-            achiev4.text = myLoadedInfo.achiev4;
+            if (myLoadedInfo.achiev1 != null)
+                achiev1.text = myLoadedInfo.achiev1;
+            if (myLoadedInfo.achiev2 != null)
+                achiev2.text = myLoadedInfo.achiev2;
+            if (myLoadedInfo.achiev3 != null)
+                achiev3.text = myLoadedInfo.achiev3;
+            if (myLoadedInfo.achiev4 != null)
+                achiev4.text = myLoadedInfo.achiev4;
         }
     }
 	
