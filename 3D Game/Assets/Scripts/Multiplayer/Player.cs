@@ -32,7 +32,7 @@ public class Player : NetworkBehaviour {
         CmdBroadcastNewPlayerSetup();
 
         objText = GameObject.Find("ObjectiveText").GetComponent<Text>();
-        levelManager = GameObject.Find("_LevelMAnager");
+        levelManager = GameObject.Find("_LevelManager");
         levelManager.GetComponent<Objective>().SetObjective(objText);
     }
 
