@@ -551,6 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1941363664180306}
+  leaveGame: {fileID: 114382219617349208}
 --- !u!114 &114864317223120506
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour {
 
     [SerializeField]
     private GameObject pauseMenu;
+    public Button leaveGame;
 
 	// Use this for initialization
 	void Start () {
@@ -24,5 +26,7 @@ public class PlayerUI : MonoBehaviour {
     {
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         PauseMenu.isOn = pauseMenu.activeSelf;
+        if (pauseMenu.activeSelf == true)
+            leaveGame.Select();
     }
 }
