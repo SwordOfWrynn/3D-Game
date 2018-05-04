@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour {
 
     public Text nameText;
     public Text dialogueText;
+    public Button continueButton;
 
     public Animator anim;
     
@@ -42,6 +43,7 @@ public class DialogueManager : MonoBehaviour {
             EndDialogue();
             return;
         }
+        continueButton.Select();
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));

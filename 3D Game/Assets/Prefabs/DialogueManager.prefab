@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 114035907777890194}
   dialogueText: {fileID: 114003349443044988}
+  continueButton: {fileID: 114938884311685052}
   anim: {fileID: 95295839645673000}
 --- !u!114 &114938884311685052
 MonoBehaviour:
