@@ -2,7 +2,7 @@
 using UnityEngine.Networking;
 using System.Collections;
 using UnityEngine.UI;
-
+using UnityEngine.Networking.Match;
 
 public class Player : NetworkBehaviour {
 
@@ -25,12 +25,14 @@ public class Player : NetworkBehaviour {
     private int currentHealth;
     private GameObject levelManager;
     private Text objText;
+    private NetworkManager networkManager;
 
     // Use this for initialization
     public void PlayerSetup() {
 
         CmdBroadcastNewPlayerSetup();
 
+        networkManager = NetworkManager.singleton;
         objText = GameObject.Find("ObjectiveText").GetComponent<Text>();
         levelManager = GameObject.Find("_LevelManager");
         levelManager.GetComponent<Objective>().SetObjective(objText);
@@ -131,7 +133,10 @@ public class Player : NetworkBehaviour {
     {
         if (collision.gameObject.name == "Door")
         {
-            levelManager.GetComponent<NextLevel>().LoadNextLevel();
+            levelManager.GetComponent<EndLevel>().SaveLevelPassed();
+            MatchInfo matchInfo = networkManager.matchInfo;
+            networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0, networkManager.OnDropConnection);
+            networkManager.StopHost();
         }
     }
 
