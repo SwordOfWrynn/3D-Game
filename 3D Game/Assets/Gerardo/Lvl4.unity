@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 3fa64eac087d9e34caa9df20b490701b, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 3fa64eac087d9e34caa9df20b490701b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1039,7 +1039,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083692488758908, guid: 3c5ab34340d108c479818786f07db88a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c5ab34340d108c479818786f07db88a, type: 2}
@@ -4475,7 +4475,7 @@ RectTransform:
   m_Children:
   - {fileID: 1321284294}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4945,6 +4945,58 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1418063455}
   m_Mesh: {fileID: 4300006, guid: ddcfc1ea2c8e51c4196e88f06636e2e2, type: 3}
+--- !u!1001 &1456552200
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645236092836636, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 114090283009168730, guid: 0f29fbaff14752240bc353badab04637,
+        type: 2}
+      propertyPath: level
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114428331633022656, guid: 0f29fbaff14752240bc353badab04637,
+        type: 2}
+      propertyPath: objective
+      value: 'Objective: Defeat the boss'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0f29fbaff14752240bc353badab04637, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1553818525
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,7 +5186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 3fa64eac087d9e34caa9df20b490701b, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 3fa64eac087d9e34caa9df20b490701b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5619,7 +5671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 3fa64eac087d9e34caa9df20b490701b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 3fa64eac087d9e34caa9df20b490701b, type: 3}
       propertyPath: m_LocalScale.x

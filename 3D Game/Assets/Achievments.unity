@@ -1178,6 +1178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae918c5a69c59e4cabea9b792f202ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuEmpty: {fileID: 0}
+  lobbyMenu: {fileID: 0}
+  lobby2: {fileID: 0}
+  lobby3: {fileID: 0}
+  lobby4: {fileID: 0}
 --- !u!114 &2093142323
 MonoBehaviour:
   m_ObjectHideFlags: 0
