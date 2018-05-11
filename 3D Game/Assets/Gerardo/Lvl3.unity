@@ -5540,6 +5540,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114951733525146490, guid: e195cd206bd60c443b4318b7c10668cc,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4307487934960656, guid: e195cd206bd60c443b4318b7c10668cc, type: 2}
       propertyPath: m_LocalPosition.x
       value: 495.77
@@ -5589,6 +5594,11 @@ Prefab:
       propertyPath: toBeDestroyed
       value: 
       objectReference: {fileID: 2087540414}
+    - target: {fileID: 114951733525146490, guid: e195cd206bd60c443b4318b7c10668cc,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e195cd206bd60c443b4318b7c10668cc, type: 2}
   m_IsPrefabParent: 0
@@ -6442,6 +6452,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114951733525146490, guid: e195cd206bd60c443b4318b7c10668cc,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4307487934960656, guid: e195cd206bd60c443b4318b7c10668cc, type: 2}
       propertyPath: m_LocalPosition.x
       value: -137.08
