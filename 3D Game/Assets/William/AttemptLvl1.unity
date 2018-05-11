@@ -2842,7 +2842,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1449915117}
@@ -5828,7 +5828,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -6274,7 +6274,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh6508
+  m_Name: pb_Mesh15116
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -17404,7 +17404,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15998
+  m_Name: pb_Mesh14694
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -32845,7 +32845,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh21686
+  m_Name: pb_Mesh15130
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -36208,7 +36208,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh21512
+  m_Name: pb_Mesh14956
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -38346,7 +38346,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh21162
+  m_Name: pb_Mesh14606
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -39412,7 +39412,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh29762
+  m_Name: pb_Mesh15832
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -42771,7 +42771,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh21134
+  m_Name: pb_Mesh14578
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -44661,7 +44661,7 @@ Prefab:
     - target: {fileID: 114951733525146490, guid: e195cd206bd60c443b4318b7c10668cc,
         type: 2}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: you found something interesting on your last dig
+      value: 'you found something interesting on your last expedition '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e195cd206bd60c443b4318b7c10668cc, type: 2}
