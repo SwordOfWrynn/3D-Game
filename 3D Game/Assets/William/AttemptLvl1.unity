@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27935,7 +27935,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-57448
+  m_Name: pb_Mesh15256
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -33041,7 +33041,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15140
+  m_Name: pb_Mesh15144
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -44421,7 +44421,6 @@ GameObject:
   - component: {fileID: 1650862569}
   - component: {fileID: 1650862568}
   - component: {fileID: 1650862567}
-  - component: {fileID: 1650862566}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -44429,13 +44428,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1650862566
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1650862565}
-  m_Enabled: 1
 --- !u!124 &1650862567
 Behaviour:
   m_ObjectHideFlags: 0
@@ -48018,7 +48010,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh14588
+  m_Name: pb_Mesh14592
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
