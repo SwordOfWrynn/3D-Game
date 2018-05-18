@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1907,6 +1907,7 @@ Transform:
   - {fileID: 909322584}
   - {fileID: 855310789}
   - {fileID: 227771096}
+  - {fileID: 644125373}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17525,6 +17526,53 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1001 &644125372
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 106143951}
+    m_Modifications:
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bcfc0765c014b524482590110473b8ff, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &644125373 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff,
+    type: 2}
+  m_PrefabInternal: {fileID: 644125372}
 --- !u!43 &667931317
 Mesh:
   m_ObjectHideFlags: 0
