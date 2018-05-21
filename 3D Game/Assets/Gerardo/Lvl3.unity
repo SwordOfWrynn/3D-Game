@@ -2932,6 +2932,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61ae5bbdc3d840642b7cb192369eaa4d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &481162241 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 61ae5bbdc3d840642b7cb192369eaa4d, type: 3}
+  m_PrefabInternal: {fileID: 481162240}
+--- !u!65 &481162242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481162241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3655589, y: 4.543125, z: 5.811133}
+  m_Center: {x: -0.6827785, y: 0.059327483, z: 1.9043896}
 --- !u!1 &488747020 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: b5290684820a94548bedb95083785116, type: 3}
@@ -7033,6 +7049,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61ae5bbdc3d840642b7cb192369eaa4d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1242094213 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 61ae5bbdc3d840642b7cb192369eaa4d, type: 3}
+  m_PrefabInternal: {fileID: 1242094212}
+--- !u!65 &1242094214
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242094213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3655589, y: 4.543126, z: 5.8111343}
+  m_Center: {x: -0.6827785, y: 0.059327498, z: 1.9043901}
 --- !u!1001 &1242405074
 Prefab:
   m_ObjectHideFlags: 0
@@ -9999,6 +10031,11 @@ Prefab:
     - target: {fileID: 4388722083648480, guid: bcfc0765c014b524482590110473b8ff, type: 2}
       propertyPath: m_RootOrder
       value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929420964165704, guid: bcfc0765c014b524482590110473b8ff,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcfc0765c014b524482590110473b8ff, type: 2}
