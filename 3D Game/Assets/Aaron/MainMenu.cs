@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour {
     {
         if (mainMenuEmpty == null)
             Debug.LogError("I don't know what's wrong");
+		Cursor.lockState = CursorLockMode.None;
         mainMenuEmpty.SetActive(true);
         lobby2.interactable = false;
         lobby3.interactable = false;

@@ -3,6 +3,7 @@ using UnityEngine.Networking;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Networking.Match;
+using UnityEngine.SceneManagement;
 
 public class Player : NetworkBehaviour {
 
@@ -137,6 +138,7 @@ public class Player : NetworkBehaviour {
             MatchInfo matchInfo = networkManager.matchInfo;
             networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0, networkManager.OnDropConnection);
             networkManager.StopHost();
+			SceneManager.LoadScene ("MainMenu");
         }
     }
 
