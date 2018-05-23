@@ -22,9 +22,9 @@ public class MainMenu : MonoBehaviour {
             Debug.LogError("I don't know what's wrong");
 		Cursor.lockState = CursorLockMode.None;
         mainMenuEmpty.SetActive(true);
-		lobby2.interactable = false;
-		lobby3.interactable = false;
-		lobby4.interactable = false;
+		lobby2.interactable = true;
+		lobby3.interactable = true;
+		lobby4.interactable = true;
         if (levels >= 1)
           lobby2.interactable = true;
         if (levels >= 2)
