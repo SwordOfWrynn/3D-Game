@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114333328205603122}
   - component: {fileID: 114508064939213624}
   - component: {fileID: 114797795992258120}
+  - component: {fileID: 114376393903443274}
   m_Layer: 0
   m_Name: _NetworkManager
   m_TagString: Untagged
@@ -123,7 +124,18 @@ MonoBehaviour:
   matchName: default
   matchSize: 4
   isNetworkActive: 0
-  matchMaker: {fileID: 0}
+  matchMaker: {fileID: 114376393903443274}
+--- !u!114 &114376393903443274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139263289670340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114508064939213624
 MonoBehaviour:
   m_ObjectHideFlags: 1

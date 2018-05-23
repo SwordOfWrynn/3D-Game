@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class MainMenu : MonoBehaviour {
 
@@ -25,7 +26,11 @@ public class MainMenu : MonoBehaviour {
 		lobby2.interactable = true;
 		lobby3.interactable = true;
 		lobby4.interactable = true;
-        if (levels >= 1)
+		NetworkManager networkManager = NetworkManager.singleton;
+		if (networkManager != null) {
+			Destroy (networkManager.gameObject);
+		}
+		if (levels >= 1)
           lobby2.interactable = true;
         if (levels >= 2)
           lobby3.interactable = true;
