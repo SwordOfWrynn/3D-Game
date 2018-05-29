@@ -87,10 +87,10 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
-    - _Gloss: 0.5
+    - _Gloss: 0.64
     - _Glossiness: 0.48
     - _Lightmapping: 1
-    - _Metallic: 0
+    - _Metallic: 0.39
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
