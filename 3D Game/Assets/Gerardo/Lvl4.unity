@@ -2716,7 +2716,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400034, guid: 9b34fcaa1c978be458f0c0867218a557, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5
+      value: 4.86
       objectReference: {fileID: 0}
     - target: {fileID: 400034, guid: 9b34fcaa1c978be458f0c0867218a557, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4190,6 +4190,19 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100034, guid: 9b34fcaa1c978be458f0c0867218a557, type: 3}
   m_PrefabInternal: {fileID: 870282729}
+--- !u!114 &1281903851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281903850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232663a52e728f149bbb8a07c0ff7c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyMaxHealth: 100
+  CurrentHealth: 10
 --- !u!65 &1281903853
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4200,8 +4213,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.916283, y: 4.102062, z: 1.8105724}
-  m_Center: {x: -0.02226124, y: 1.8599644, z: 0.12926693}
+  m_Size: {x: 2.916283, y: 3.8135319, z: 1.8105724}
+  m_Center: {x: -0.02226124, y: 2.0042295, z: 0.12926693}
 --- !u!1 &1294098199
 GameObject:
   m_ObjectHideFlags: 0
