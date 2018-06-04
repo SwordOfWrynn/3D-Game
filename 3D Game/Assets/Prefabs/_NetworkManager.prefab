@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114252842297106620}
   - component: {fileID: 114294341061979950}
   - component: {fileID: 114484799538484258}
+  - component: {fileID: 114681525677402414}
   m_Layer: 0
   m_Name: _NetworkManager
   m_TagString: Untagged
@@ -151,7 +152,7 @@ MonoBehaviour:
   matchName: default
   matchSize: 4
   isNetworkActive: 0
-  matchMaker: {fileID: 114484799538484258}
+  matchMaker: {fileID: 114681525677402414}
 --- !u!114 &114376393903443274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,6 +190,17 @@ MonoBehaviour:
   showGUI: 1
   offsetX: 0
   offsetY: 0
+--- !u!114 &114681525677402414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139263289670340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114746045602262832
 MonoBehaviour:
   m_ObjectHideFlags: 1
